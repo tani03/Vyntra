@@ -12,6 +12,7 @@ import net.vyntra.martbackend.dto.Category;
 @Controller
 public class PageController {
 	
+<<<<<<< HEAD
 	@Autowired
 	private CategoryDAO categoryDAO;
 	
@@ -59,6 +60,10 @@ public class PageController {
 	
 	@RequestMapping(value= "/show/category/{id}/products")
 	public ModelAndView showCategoryProducts(@PathVariable("id") int id)
+=======
+	@RequestMapping(value= {"/","/home","/index","/page"})
+	public ModelAndView page()
+>>>>>>> refs/remotes/origin/master
 	{
 		ModelAndView mv=new ModelAndView("page");
 		
