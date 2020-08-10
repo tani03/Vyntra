@@ -1,3 +1,5 @@
+<!-- 
+
 <c:set var="availableCount" value="${userModel.cart.cartLines}" />
 <div class="container">
 
@@ -96,3 +98,5 @@
 
 
 </div>
+
+-->

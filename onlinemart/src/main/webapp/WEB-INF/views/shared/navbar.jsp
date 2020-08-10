@@ -1,4 +1,4 @@
-<%@taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
+
 	<script>
 		window.userRole = '${userModel.role}';
 	</script>
@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${contextRoot}/home">Home</a>
+                <a class="navbar-brand" href="${contextRoot}/home">Vyntra-Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,15 +28,15 @@
                     <li id="listProducts">
                         <a href="${contextRoot}/show/all/products">View Products</a>
                     </li>
-					<security:authorize access="hasAuthority('ADMIN')">
+					<!--  <security:authorize access="hasAuthority('ADMIN')">
 	                    <li id="manageProduct">
 	                        <a href="${contextRoot}/manage/product">Manage Product</a>
 	                    </li>					
-					</security:authorize>
+					</security:authorize>	-->
                 </ul>
 			    
 			    <ul class="nav navbar-nav navbar-right">
-			    	<security:authorize access="isAnonymous()">
+			    <!-- 	<security:authorize access="isAnonymous()">
 	                    <li id="signup">
 	                        <a href="${contextRoot}/membership">Sign Up</a>
 	                    </li>
@@ -64,7 +64,7 @@
 		                    </li>                    			    	
 						  </ul>		
 						</li>    			    
-			    	</security:authorize>                    
+			    	</security:authorize>   -->                 
 			    </ul>                
                 
             </div>

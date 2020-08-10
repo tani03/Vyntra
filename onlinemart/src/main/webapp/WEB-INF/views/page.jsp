@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+	pageEncoding="ISO-8859-1" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
@@ -19,7 +19,7 @@
 <meta name="_csrf" content="${_csrf.token}">
 <meta name="_csrf_header" content="${_csrf.headerName}">
 
-<title>Online Shopping - ${title}</title>
+<title>Online Mart - ${title}</title>
 
 <script>
 	window.menu = '${title}';
@@ -89,7 +89,8 @@
 				<%@include file="singleProduct.jsp"%>
 			</c:if>								
 
-			<!-- Load only when user clicks manage product -->
+		<%-- 	
+				<!-- Load only when user clicks manage product -->
 			<c:if test="${userClickManageProduct == true}">
 				<%@include file="manageProduct.jsp"%>
 			</c:if>	
@@ -98,7 +99,7 @@
 			<c:if test="${userClickShowCart == true}">
 				<%@include file="cart.jsp"%>
 			</c:if>	
-
+		--%>
 		</div>
 
 
