@@ -35,11 +35,13 @@ public class CategoryTestCase {
 	 * assertEquals("Successfully added  a category",true,categoryDAO.add(category))
 	 * ; }
 	 */
-	 @Test
-	 public void testGetCategory() {
-		 category=categoryDAO.get(3);
-		 assertEquals("Successfully fetched single category","Kids",category.getName()); 
-		 
-	 }
+	/*
+	 * @Test public void testGetCategory() { category=categoryDAO.get(3);
+	 * assertEquals("Successfully fetched single category","Kids",category.getName()
+	 * );
+	 * 
+	 * }
+	 */
+	
 
 }
